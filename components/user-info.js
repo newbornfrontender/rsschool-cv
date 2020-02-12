@@ -77,10 +77,7 @@ export class UserInfo extends HTMLElement {
     const offset = window.pageYOffset;
     const height = header.offsetHeight;
 
-    if (offset > height) {
-      this.sticky = true;
-    } else {
-      this.sticky = false;
-    }
+    if (offset > height) this.sticky = true;
+    else this.sticky = false;
   }
 }
