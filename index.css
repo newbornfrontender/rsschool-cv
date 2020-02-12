@@ -35,7 +35,7 @@ p {
 
   /* animations */
 
-  --base-transition-delay: 0.12s
+  --base-transition-delay: 0.12s;
 }
 
 /* main styles */
