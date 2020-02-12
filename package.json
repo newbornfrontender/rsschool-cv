@@ -9,7 +9,7 @@
     "serve": "^11.3.0"
   },
   "scripts": {
-    "format": "prettier --write *.{html,css,js*}",
+    "format": "prettier --write **/*.{html,css,js*}",
     "serve": "serve"
   },
   "prettier": {
