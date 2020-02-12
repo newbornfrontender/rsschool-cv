@@ -51,6 +51,8 @@
     <header class="container">
       <div class="wrapper">
         <img class="logo" alt="CV Logo" src="/assets/logo.png" />
+
+        <user-info></user-info>
       </div>
     </header>
 
@@ -100,6 +102,20 @@
       <p class="text">
         <slot></slot>
       </p>
+    </template>
+
+    <template id="user-info">
+      <div>
+        <p>Mirasov Sergey</p>
+        <p>22 years old</p>
+      </div>
+
+      <a href="https://github.com/newbornfrontender/rsschool-cv/blob/rsschool-cv-html/assets/userpic.jpg">
+        <picture>
+          <source srcset="/assets/userpic.webp" type="image/webp" />
+          <img src="/assets/userpic.jpg" alt="Userpic" />
+        </picture>
+      </a>
     </template>
   </body>
 </html>
