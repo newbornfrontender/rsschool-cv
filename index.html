@@ -4,14 +4,102 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CV Page" />
 
-    <title>HTML, CSS & Git Basics</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/site.webmanifest" />
 
-    <link rel="stylesheet" href="/index.css">
-    <link rel="modulepreload" href="/index.js">
+    <title>CV Page</title>
+
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      as="style"
+    />
+    <link rel="preload" href="/index.css" as="style" />
+    <link rel="modulepreload" href="/index.js" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <script type="module" src="/index.js"></script>
   </head>
 
   <body>
-    <script type="module" src="/index.js"></script>
+    <header class="container">
+      <div class="wrapper">
+        <img class="logo" src="/assets/logo.png" />
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="wrapper">
+        <h1>CV</h1>
+
+        <titled-section>
+          <h2 slot="title">Title 1</h2>
+
+          <p>Content 1</p>
+        </titled-section>
+
+        <titled-section>
+          <h2 slot="title">Title 2</h2>
+
+          <p>Content 2</p>
+        </titled-section>
+      </div>
+    </main>
+
+    <footer class="container">
+      <div class="wrapper">
+        <p>
+          <a
+            class="link license"
+            href="https://github.com/newbornfrontender/rsschool-cv/blob/master/license"
+            target="_blank"
+            >All rights reserved</a
+          >
+        </p>
+
+        <fancy-logo>CV Page</fancy-logo>
+      </div>
+    </footer>
+
+    <template id="titled-section">
+      <slot name="title" part="title"></slot>
+
+      <div part="content">
+        <slot></slot>
+      </div>
+    </template>
+
+    <template id="fancy-logo">
+      <p class="icon">CV</p>
+      <p class="text">
+        <slot></slot>
+      </p>
+    </template>
   </body>
 </html>
