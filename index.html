@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CV Page" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./static/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./static/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./static/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./static/site.webmanifest" />
+
+    <title>CV Page</title>
+
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      as="style"
+    />
+    <link rel="preload" href="./index.css" as="style" />
+    <link rel="modulepreload" href="./index.js" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <body>
+    <header class="container">
+      <div class="wrapper">
+        <img class="logo" alt="CV Logo" src="./assets/logo.png" />
+
+        <user-info></user-info>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="wrapper">
+        <h1>CV</h1>
+
+        <titled-section>
+          <h2 slot="title">Name</h2>
+
+          <p>Sergey Mirasov</p>
+        </titled-section>
+
+        <titled-section>
+          <h2 slot="title">Contact Info</h2>
+
+          <ul>
+            <li>
+              <a
+                class="link"
+                href="https://t.me/newbornfrontender"
+                target="_blank"
+                >Telegram</a
+              >
+            </li>
+            <li>
+              <a class="link" href="mailto:newbornfrontender@gmail.com"
+                >E-Mail</a
+              >
+            </li>
+          </ul>
+        </titled-section>
+
+        <titled-section>
+          <h2 slot="title">Skills</h2>
+
+          <ul>
+            <li>
+              HTML (HTML5): Semantic, Cross Browser Compatibility, Multilanguage
+              and Structural Markup (LTR/RTL, Asian (Yokogaki, Tategaki))
+            </li>
+            <li>
+              CSS (CSS3, CSS Selectors Level 4): Adaptive/Responsive Design,
+              Mobile First, Stage 4-0 Features, Flexbox, Grid, Logical
+              Properties and Values, Custom Properties, Writing-Mode
+            </li>
+            <li>
+              JS (ES2015+): ES Modules, Rest/Spread, Promises, Optional
+              Chaining, Nullish Coalescing, Dynamic Imports, etc
+            </li>
+            <li>Node: Basics</li>
+            <li>TS: Basics</li>
+            <li>Rust/C (Embedded): Basics</li>
+            <li>
+              Methodologies/Patterns: BEM, SMACSS, Atomic Design, TDD, Agile,
+              Conventional Commits, PRPL
+            </li>
+            <li>Frameworks: React/Preact, Svelte, Stencil</li>
+            <li>
+              Standards: Custom Elements, Web-Components, Accessibility, WebGL,
+              Houdini, Animations
+            </li>
+            <li>Testing: Unit (Jest/Mocha), E2E (Cypress)</li>
+            <li>
+              Tools: Git, Webpack, Rollup, Gulp, Parcel, ESLint (TS ESLint),
+              Stylelint, Prettier
+            </li>
+            <li>Processors/Compilers: SASS, PostCSS, Babel, TS</li>
+            <li>State Management: Redux, Effector, Svelte Store</li>
+            <li>
+              Styling: Cascade and Inheritance, Shadow DOM, CSS Modules,
+              CSS-in-JS (Reshadow, Styled Components, Emotion)
+            </li>
+            <li>
+              Page Speed Optimization: SSR (Svelte), Prerender (Puppeteer,
+              JSDOM), Preload/Prefetch, Insights
+            </li>
+            <li>API: REST</li>
+            <li>OS: Windows, Linux, Mac</li>
+          </ul>
+        </titled-section>
+
+        <titled-section>
+          <h2 slot="title">Summary</h2>
+
+          <p>
+            I want to write high-quality and accessible code using modern
+            technologies
+          </p>
+        </titled-section>
+
+        <titled-section>
+          <h2 slot="title">Code examples</h2>
+
+          <ul>
+            <li>
+              <a
+                class="link"
+                href="https://github.com/newbornfrontender?tab=repositories"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://www.codewars.com/users/newbornfrontender"
+                target="_blank"
+                >CodeWars</a
+              >
+            </li>
+          </ul>
+        </titled-section>
+
+        <titled-section>
+          <h2 slot="title">Experience</h2>
+
+          <ul>
+            <li>
+              <a class="link" href="https://law-expert.ae" target="_blank"
+                >https://law-expert.ae</a
+              >
+            </li>
+            <li>
+              <a class="link" href="https://expertsmile.ru" target="_blank"
+                >https://expertsmile.ru</a
+              >
+            </li>
+            <li>
+              <a class="link" href="https://arksoil.com" target="_blank"
+                >https://arksoil.com</a
+              >
+            </li>
+            <li>
+              <a class="link" href="http://azsterminal.ru " target="_blank"
+                >http://azsterminal.ru
+              </a>
+            </li>
+            <li>
+              <a class="link" href="http://agat52.ru" target="_blank"
+                >http://agat52.ru</a
+              >
+            </li>
+          </ul>
+        </titled-section>
+
+        <titled-section>
+          <h2 slot="title">Languages</h2>
+
+          <ul>
+            <li>English: A2</li>
+            <li>Japanese: N5</li>
+          </ul>
+        </titled-section>
+
+        <titled-section>
+          <h2 slot="title">Education</h2>
+
+          <ul>
+            <li>
+              <a
+                class="link"
+                href="https://github.com/HowProgrammingWorks"
+                target="_blank"
+                >HowProgrammingWorks</a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://github.com/HowProgrammingWorks/Index"
+                target="_blank"
+                >IP9X</a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://htmlacademy.ru/profile/id518007"
+                target="_blank"
+                >HTML Academy</a
+              >
+            </li>
+          </ul>
+        </titled-section>
+      </div>
+    </main>
+
+    <footer class="container">
+      <div class="wrapper">
+        <p>
+          <a
+            class="link license"
+            href="https://github.com/newbornfrontender/rsschool-cv/blob/rsschool-cv-html/license"
+            target="_blank"
+            >All rights reserved</a
+          >
+        </p>
+
+        <fancy-logo>CV Page</fancy-logo>
+      </div>
+    </footer>
+
+    <template id="titled-section">
+      <slot name="title" part="title"></slot>
+
+      <div part="content">
+        <slot></slot>
+      </div>
+    </template>
+
+    <template id="fancy-logo">
+      <p class="icon">CV</p>
+      <p class="text">
+        <slot></slot>
+      </p>
+    </template>
+
+    <template id="user-info">
+      <div>
+        <p>Mirasov Sergey</p>
+        <p>22 years old</p>
+      </div>
+
+      <a
+        href="https://github.com/newbornfrontender/rsschool-cv/blob/rsschool-cv-html/assets/userpic.jpg"
+        target="_blank"
+      >
+        <picture>
+          <source srcset="./assets/userpic.webp" type="image/webp" />
+          <img src="./assets/userpic.jpg" alt="Userpic" />
+        </picture>
+      </a>
+    </template>
+  </body>
+</html>
