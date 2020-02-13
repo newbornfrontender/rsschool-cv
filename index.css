@@ -75,6 +75,32 @@ h1 {
   text-shadow: 1px 1px transparent, 2px 2px #c0c0c0;
 }
 
+p,
+li {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+ul {
+  padding-inline-start: 1rem;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+li::before {
+  content: '';
+  display: block;
+  inline-size: 0.5rem;
+  block-size: 0.5rem;
+  margin-inline-end: 1rem;
+  background-color: var(--red);
+  border-radius: 50%;
+}
+
 footer {
   margin-block-start: auto;
   color: var(--white);
@@ -127,13 +153,13 @@ footer .wrapper {
 
 /* custom elements styles */
 
-titled-section:nth-child(2n) {
+titled-section:not(:last-child) {
   margin-block-end: var(--indent);
 }
 
 titled-section:nth-child(2n + 1)::part(title),
 titled-section:nth-child(2n + 1)::part(content) {
-  text-align: right;
+  direction: rtl;
 }
 
 /* media queries */
