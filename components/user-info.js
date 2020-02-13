@@ -1,6 +1,6 @@
 'use strict';
 
-import { visuallyHidden } from '/helpers.js';
+import { visuallyHidden } from './helpers.js';
 
 export class UserInfo extends HTMLElement {
   constructor() {
